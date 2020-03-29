@@ -38,7 +38,7 @@ public class InsertAssetTest extends TestBase {
         System.out.println("verified2!!!!!");
     }
 
-
+/*Closing the browser*/
     @AfterMethod
     public void tearDown(){
         driver.quit();

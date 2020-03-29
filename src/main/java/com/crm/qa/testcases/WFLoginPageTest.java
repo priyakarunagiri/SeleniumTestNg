@@ -83,6 +83,7 @@ public class WFLoginPageTest extends TestBase {
         }
 */
 
+    /*Closing the browser*/
     @AfterMethod
     public void tearDown(){
        driver.quit();
