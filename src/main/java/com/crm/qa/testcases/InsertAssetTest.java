@@ -2,6 +2,7 @@ package com.crm.qa.testcases;
 
 import com.crm.qa.base.TestBase;
 import com.crm.qa.pages.InsertAsset;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -37,11 +38,11 @@ public class InsertAssetTest extends TestBase {
         System.out.println("verified2!!!!!");
     }
 
-
-    /*@AfterMethod
+/*Closing the browser*/
+    @AfterMethod
     public void tearDown(){
         driver.quit();
-    }*/
+    }
 
 }
 

@@ -4,6 +4,7 @@ import com.crm.qa.base.TestBase;
 import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.WFLoginPage;
 import com.crm.qa.pages.WFLoginPage2;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
@@ -40,7 +41,7 @@ public class WFLoginPageTest extends TestBase {
         }*/
 
 
-    @Test(priority = 1)
+    @Test()
     public void loginTest() throws InterruptedException {
         homePage = wfloginPage.login(prop.getProperty("username"), prop.getProperty("password"));
 
@@ -82,11 +83,12 @@ public class WFLoginPageTest extends TestBase {
         }
 */
 
-    /*@AfterMethod
+    /*Closing the browser*/
+    @AfterMethod
     public void tearDown(){
        driver.quit();
     }
-*/
+
 
 }
 
