@@ -23,7 +23,7 @@ public class InsertAssetTest extends TestBase {
         insertAsset = new InsertAsset();
     }
 
-    @Test (priority = 1)
+    @Test (priority = 2)
     public void verifyTitleTest(){
 
         insertAsset.verifyTitle();
