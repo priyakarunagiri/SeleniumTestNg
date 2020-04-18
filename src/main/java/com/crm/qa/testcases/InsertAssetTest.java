@@ -31,7 +31,7 @@ public class InsertAssetTest extends TestBase {
 
     }
 
-    @Test
+    @Test(priority = 1)
     public void verifyHeaderAndFooterTest(){
 
         insertAsset.assertTest();
